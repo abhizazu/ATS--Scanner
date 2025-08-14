@@ -1,7 +1,7 @@
 # backend/app.py
 
 from flask import Flask, request, jsonify, send_from_directory
-from parser import calculate_match_score
+from parser_utils import calculate_match_score
 
 app = Flask(__name__, static_folder="../frontend", template_folder="../frontend")
 
