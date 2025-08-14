@@ -2,12 +2,15 @@
 
 from flask import Flask, request, jsonify, send_from_directory
 from parser_utils import calculate_match_score
+import os
 
-app = Flask(__name__, static_folder="../frontend", template_folder="../frontend")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+app = Flask(__name__, static_folder=BASE_DIR, template_folder=BASE_DIR)
 
 @app.route("/")
 def index():
-    return send_from_directory(app.template_folder, "index.html")
+    return send_from_directory(BASE_DIR, "index.html")
 
 @app.route("/api/match", methods=["POST"])
 def analyze():
