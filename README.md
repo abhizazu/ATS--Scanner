@@ -1,64 +1,114 @@
-**🎯 ATS Resume Scanner**
+# 🎯 ATS Resume Scanner
 
-AI-Powered Resume Analysis Tool for Job Applications
+## AI-Powered Resume Analysis Tool for Job Applications
 
-**🚀 Project Overview**
+[![Deploy to GitHub Pages](https://github.com/abhizazu/ATS--Scanner-2/actions/workflows/deploy.yml/badge.svg)](https://github.com/abhizazu/ATS--Scanner-2/actions/workflows/deploy.yml)
 
-ATS Resume Scanner is a lightweight, interactive tool that evaluates how well a resume matches a job description. It extracts important keywords from the JD, compares them with the resume, and provides a match score along with missing keywords.
+## 🚀 Project Overview
 
-This project demonstrates practical skills in HTML, CSS, JavaScript, text parsing, keyword matching, and creating user-friendly interfaces.
+ATS Resume Scanner is a powerful web application that helps job seekers optimize their resumes for Applicant Tracking Systems (ATS). The application analyzes how well a resume matches a specific job description by extracting important keywords, calculating a match score, and identifying missing keywords that could improve the resume's ATS compatibility.
 
-🌟 Features
+This project combines a Flask backend for robust text analysis with a clean, responsive frontend interface, demonstrating skills in full-stack web development, natural language processing, and creating user-friendly applications.
 
-💻 Resume Analysis: Paste resume text for instant analysis.
+## ✨ Features
 
-📋 Job Description Matching: Highlights JD keywords present in the resume.
+- **💻 Resume Analysis**: Upload or paste resume text for instant, accurate analysis
+- **📋 Job Description Matching**: Sophisticated algorithm identifies key terms from job descriptions
+- **🎯 Smart Scoring System**: Calculates precise percentage match based on keyword presence and importance
+- **🔍 Missing Keywords Identification**: Highlights critical skills or qualifications missing from your resume
+- **⚡ Fast & Efficient**: Optimized algorithms provide instant results
+- **🔄 Client-Server Architecture**: Combines frontend simplicity with backend processing power
+- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
 
-🎯 Smart Scoring: Calculates percentage match based on keyword overlap.
+## 🛠️ How to Use
 
-🔍 Missing Keywords: Shows skills or responsibilities not found in the resume.
+1. Visit the application in your web browser
+2. Paste your resume text in the "Resume" field
+3. Paste the job description in the "Job Description" field
+4. Click "Analyze Resume"
+5. Review your match score and any missing keywords
+6. Update your resume based on the analysis to improve your chances
 
-⚡ Lightweight & Efficient: Minimal code, fully client-side, no backend required.
+## 🔧 Technical Architecture
 
-🛠 How to Use
+### Frontend
+- **HTML/CSS/JavaScript**: Clean, responsive user interface
+- **Vanilla JS**: Lightweight client-side processing for immediate user feedback
+- **Responsive Design**: Adapts to different screen sizes and devices
 
-Visit the live demo: ATS Resume Scanner
+### Backend
+- **Flask**: Python web framework for handling API requests
+- **Natural Language Processing**: Custom algorithms for text analysis and keyword extraction
+- **RESTful API**: Clean API endpoints for resume analysis
 
-Paste your resume in the Resume box.
+### Deployment
+- **GitHub Actions**: Automated CI/CD pipeline
+- **GitHub Pages**: Static hosting for the application
 
-Paste the job description in the Job Description box.
+## 🧰 Project Structure
 
-Click Analyze Resume.
+```
+ATS--Scanner-2/
+├── .github/                # GitHub configuration
+│   └── workflows/          # CI/CD workflows
+│       └── deploy.yml      # GitHub Pages deployment
+├── backend/                # Server-side code
+│   ├── app.py              # Flask application & API endpoints
+│   └── parser_utils.py     # Text analysis utilities
+├── frontend/               # Client-side code
+│   └── index.html          # Main application interface
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+```
 
-View your ATS match score and missing keywords.
+## 🚀 Getting Started
 
-🔧 Technical Details
+### Prerequisites
+- Python 3.9+
+- Flask
 
-Frontend: HTML, CSS, JavaScript (all client-side)
+### Installation
 
-Keyword Extraction: Extracts important words from the JD and compares them with the resume
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/ATS--Scanner-2.git
+   cd ATS--Scanner-2
+   ```
 
-Scoring: Calculates match percentage based on keyword overlap
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Hosting: GitHub Pages for instant access
+3. Run the application
+   ```bash
+   python backend/app.py
+   ```
 
-💡 What I Learned
+4. Open your browser and navigate to `http://localhost:5000`
 
-DOM manipulation and event handling in JavaScript
+## 💡 Key Insights & Learning
 
-Text parsing and string comparison logic
+- **Text Analysis Techniques**: Implemented efficient algorithms for keyword extraction and matching
+- **Full-Stack Development**: Balanced frontend user experience with backend processing capabilities
+- **Deployment Automation**: Configured GitHub Actions for seamless deployment
+- **User Experience Design**: Created an intuitive interface for non-technical users
 
-Designing intuitive and user-friendly interfaces
+## 🔮 Future Enhancements
 
-Hosting web applications using GitHub Pages
+- **Advanced NLP**: Implement more sophisticated natural language processing for better keyword extraction
+- **PDF/DOCX Parsing**: Add support for direct file uploads in various formats
+- **Industry-Specific Analysis**: Customize analysis based on different industries and job types
+- **Suggestion Engine**: Provide specific recommendations for improving resume content
 
-📁 Project Structure
-ATS-Recruitment/
-├── index.html      # Main frontend HTML
-├── script.js       # JavaScript for resume analysis
-├── style.css       # Optional CSS file
-└── README.md       # Project documentation
+## 📄 License
 
-🔗 Live Demo
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Try it here: https://abhizazu.github.io/ATS-Recruitment
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+Developed with ❤️ by [Your Name]
