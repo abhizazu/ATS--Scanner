@@ -2,7 +2,6 @@
 
 ## AI-Powered Resume Analysis Tool for Job Applications
 
-[![Deploy to GitHub Pages](https://github.com/abhizazu/ATS--Scanner-2/actions/workflows/deploy.yml/badge.svg)](https://github.com/abhizazu/ATS--Scanner-2/actions/workflows/deploy.yml)
 
 ## 🚀 Project Overview
 
@@ -112,4 +111,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 Developed with ❤️ by ABHI
+
 
